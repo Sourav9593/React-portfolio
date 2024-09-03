@@ -1,0 +1,124 @@
+#intro{
+    /* height: 100vh; */
+    width: 100%;
+    /* margin-top: 70px; */
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+    .introContent{
+        height: 100vh;
+        width: 100vw;
+        padding: 0 2rem;
+        margin-top: 70px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .hello{
+            font-size: 1.75rem;
+            font-weight: 100;
+        }
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        .introName{
+            color: yellow;
+        }
+
+        .introPara{
+            font-size: medium;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .btn{
+            background-color: rgb(0, 95, 146);
+            color: white;
+            margin: 1rem 0;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 2rem;
+
+        }
+        .btn:hover{
+            background: transparent;
+            border: 1px solid yellow;
+            font-weight: bold;
+        }
+    }
+
+    .bg{
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        z-index: -1;
+        object-fit: cover;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #intro{
+        .bg{
+            right: -10vw;
+        }
+    }
+}
+@media only screen and (max-width: 572px) {
+    #intro{
+        .introContent{
+            height: 80vh;
+            font-size: 1.5rem;
+            .hello{
+                font-size: 1rem;
+                font-weight: 200;
+            }
+            
+            h1{
+                font-size: 1.5rem;
+            }
+
+            .introName{
+                color: yellow;
+            }
+    
+            .introPara{
+                font-size: small;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+        }
+        .bg{
+            height: 100%;
+            right: -15vw;
+        }
+    }
+}
+@media only screen and (max-width: 440px) {
+    #intro{
+        .introContent{
+            height: 70vh;
+            .bg{
+                /* height: 80vh; */
+                /* right: -20vw; */
+            }
+        }
+    }
+}
+@media only screen and (max-width: 375px) {
+    #intro{
+        .introContent{
+            height: 60vh;
+        }
+        .bg{
+            /* height: 70vh; */
+        }
+    }
+}

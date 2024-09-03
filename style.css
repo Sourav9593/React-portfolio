@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'poppins',sans-serif;
+}
+html{
+    font-size: 100%;
+}
+
+body{
+    /* background-color: rgb(30, 30, 30); */
+    background-color: #1f242d;
+    /* background-image: url('./src/assets/bg-texture.png'); */
+    color: #ffffff;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+section{
+    /* height: 100vh; */
+    /* text-align: center; */
+    h2{
+        color: yellow;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
