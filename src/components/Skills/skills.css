@@ -11,7 +11,7 @@
 }
 
 .experience__container > div {
-    background: rgb(0, 95, 146);
+    background: #da7d20;
     padding: 2.5rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
@@ -20,7 +20,7 @@
 
 .experience__container > div:hover {
     background: transparent;
-    border-color: yellow;
+    border-color: #b820e6;
     cursor: default;
 }
 

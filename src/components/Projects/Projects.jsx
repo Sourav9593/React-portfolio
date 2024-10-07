@@ -1,8 +1,9 @@
 import React from 'react';
-import IMG1 from '../../assets/youtube.png';
-import IMG2 from '../../assets/GoogleGeminiClone.png';
-import IMG3 from '../../assets/quizApp.png';
-// import IMG4 from '../../assets/Form.png';
+import IMG1 from '../../assets/food-app.png';
+import IMG2 from '../../assets/youtube.png';
+import IMG3 from '../../assets/GoogleGeminiClone.png';
+import IMG4 from '../../assets/quizApp.png';
+import IMG5 from '../../assets/to-do.png';
 // import IMG5 from '../../assets/news.png';
 // import IMG6 from '../../assets/math.png';
 
@@ -11,43 +12,52 @@ import './projects.css';
 const Portfolio = () => {
   const soloProjects = [
     {
-      id: 1,
-      title: 'Youtube Clone',
+      id: 0,
+      title: 'Food App',
       img: IMG1,
       description:
-        "The Netflix UI clone project recreates Netflix's interface using HTML, CSS, and possibly. It aims to replicate layout, design, and functionality for educational or demonstrative purposes, offering hands-on experience in web development and UI design.",
-      link: 'https://netflix-clone-u.netlify.app/',
+        "Developed a food delivery app using React.js and Context API to handle global state efficiently. Focused on creating a responsive UI with smooth user interactions and optimized API integration.",
+      link: 'https://food-app-by-sourav.netlify.app/',
+      github: 'https://github.com/Sourav9593/foodApp',
+    },
+    {
+      id: 1,
+      title: 'Youtube Clone',
+      img: IMG2,
+      description:
+        "Developed a YouTube clone using React.js and Rapid API to fetch and display video content dynamically. Implemented key features such as video search, trending videos, and video player functionality.",
+      link: 'https://sourav-youtube-clone.netlify.app/',
       github: 'https://github.com/Sourav9593/Youtube-clone-ReactJs-',
     },
     {
       id: 2,
       title: 'Google-Gemini Clone',
-      img: IMG2,
+      img: IMG3,
       description:
-        'The online quiz app facilitates both student testing and teacher question updates. Users can take tests within the app, while teachers manage and update questions.',
+        'Created a Google Gemini clone using React.js and Context API to manage global state efficiently. Implemented features like conversational AI interaction, multi-modal content display, and search functionality.',
       technologies: 'Python | Django',
-      link: 'https://quiz-maker-ten.vercel.app/',
+      link: 'https://sourav-google-gemini-clone.netlify.app/',
       github: 'https://github.com/Sourav9593/Google-Gemini-clone-ReactJs-',
     },
     {
       id: 3,
       title: 'Quiz App',
-      img: IMG3,
-      description: 'User friendly app to plan your day and manage tasks',
+      img: IMG4,
+      description: 'Developed a dynamic quiz app using React.js with scoring functionality. Integrated interactive UI components for a seamless user experience. Implemented state management for efficient navigation and performance.',
       technologies: 'Redux toolkit  | React',
-      link: 'https://reduxtoolkit-todos-by-chandra.netlify.app/',
+      link: 'https://sourav-react-quiz-app.netlify.app/',
       github: 'https://github.com/Sourav9593/Quiz-App-ReactJa',
     },
-    // {
-    //   id: 4,
-    //   title: 'Live Validation Form',
-    //   img: IMG1,
-    //   description:
-    //     'Formik facilitates real-time validation in React forms, enhancing user experience with seamless integration and robust error handling.',
-    //   technologies: 'React | Formik.',
-    //   link: 'https://meri-mg.github.io/shelter/pages/main/index.html',
-    //   github: 'https://github.com/Meri-MG/shelter',
-    // },
+    {
+      id: 4,
+      title: 'To-Do App',
+      img: IMG5,
+      description:
+        'Built a responsive todo app using React.js, allowing users to add, and delete tasks. Focused on clean UI design and efficient state management for a smooth user experience.',
+      technologies: 'React | Formik.',
+      link: 'https://sourav-to-do-app.netlify.app/',
+      github: 'https://github.com/Sourav9593/React-ToDo-app',
+    },
     // {
     //   id: 5,
     //   title: 'World News',
@@ -84,7 +94,6 @@ const Portfolio = () => {
             <div className="portfolio__item-content">
               <h3>{pro.title}</h3>
               <p>{pro.description}</p>
-              <p>{pro.technologies}</p>
             </div>
             <div className="portfolio__item-cta">
               <a
@@ -95,14 +104,14 @@ const Portfolio = () => {
               >
                 GitHub
               </a>
-              {/* <a
+              <a
                 href={pro.link}
                 target="_blank"
                 className="btn btn-primary"
                 rel="noreferrer"
               >
                 Visit Website
-              </a>  */}
+              </a>  
             </div>
           </article>
         ))}

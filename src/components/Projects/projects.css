@@ -10,7 +10,7 @@
 }
 
 .portfolio__item {
-    background: rgb(0, 95, 146);
+    background: #da7d20;
     width: 100%;
     padding: 1rem;
     border-radius: 2rem;
@@ -19,8 +19,15 @@
 }
 
 .portfolio__item:hover {
-    border-color: yellow;
+    border-color: #b820e6;
     background: transparent;
+    a{
+        background: linear-gradient(45deg, #b820e6, #da7d20);
+        color: white;
+    }
+    a:hover{
+        background: linear-gradient(45deg, #da7d20,#b820e6);
+    }
 }
 
 .portfolio__item-image {
@@ -51,14 +58,15 @@
     margin-bottom: 2rem; 
 
     a{
-        background-color: yellow;
+        background-color: white;
+        color: black;
         font-weight: 500;
         padding: 5px 10px;
         border-radius: 10px;
     }
 
     a:hover{
-        background-color: #fff;
+        background: linear-gradient(45deg, #b820e6, #da7d20);
         
     }
 }

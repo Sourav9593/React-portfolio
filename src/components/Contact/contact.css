@@ -34,23 +34,23 @@
             max-width: 40rem;
             margin: 0.5rem;
             padding: 0.5rem 1rem;
-            color: white;
+            color: black;
             border: none;
             border-radius: 0.5rem;
-            background: #323946;
+            background: #e4e4e4;
         }
 
         .submitBtn{
-            background: rgb(0, 95, 146);
+            background: linear-gradient(45deg, #b820e6, #da7d20);
             border: none;
             color: white;
             border-radius: 0.5rem;
             margin: 2rem;
             padding: 0.75rem 3.5rem;
+            transition: all 400ms ease;
         }
         .submitBtn:hover{
-            border: 1px solid yellow;
-            background: transparent;
+            background: linear-gradient(45deg, #da7d20,#b820e6);
         }
     }
 }

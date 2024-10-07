@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import {Link} from 'react-scroll'
-import Me from '../../assets/my_img copy.jpg'
+import Me from '../../assets/my_img.jpg'
 import { FaAward } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
 
@@ -19,20 +19,20 @@ const About = () => {
             </div>
 
             <div className="about_content">
-                    <div className="about_cards">
-                        <article className="about_card">
-                            <FaAward className='about_icon'/>
-                            <h5>Experience</h5>
-                            <small>1+ Years</small>
-                        </article>
-                        <article className="about_card">
-                            <VscFolderLibrary className='about_icon'/>
-                            <h5>Projects</h5>
-                            <small>1+ Years</small>
-                        </article>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro exercitationem animi saepe error laborum repudiandae neque magnam. Vero architecto voluptates totam atque odio cum saepe nulla quaerat pariatur. Vitae rem eligendi aut blanditiis?</p>
-                    <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>Let's Talk</Link>
+                <div className="about_cards">
+                    <article className="about_card">
+                        <FaAward className='about_icon'/>
+                        <h5>Experience</h5>
+                        <small>1+ Years</small>
+                    </article>
+                    <article className="about_card">
+                        <VscFolderLibrary className='about_icon'/>
+                        <h5>Projects</h5>
+                        <small>5+</small>
+                    </article>
+                </div>
+                <p>I am a passionate React developer with a strong focus on building dynamic, responsive web applications. My expertise lies in creating seamless user interfaces with React.js, and I have a growing knowledge of backend development using Node.js and Express. I am always eager to learn and enhance my skills, with a keen interest in exploring full-stack development.</p>
+                <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>Let's Talk</Link>
             </div>
         </div>
     </section>

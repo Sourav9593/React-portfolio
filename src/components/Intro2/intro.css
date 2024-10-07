@@ -1,0 +1,126 @@
+#intro {
+    /* height: 100vh; */
+    width: 100%;
+    /* margin-top: 70px; */
+    /* max-width: 75rem; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+    .introContent {
+        height: 100vh;
+        margin-top: 40px;
+        max-width: 75rem;
+        width: 100vw;
+        padding: 0 2rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .bg {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: rgba(224, 35, 35, 0.2) 0px 8px 24px;
+        }
+
+        .hello {
+            font-size: 1.75rem;
+            font-weight: 100;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        .introName {
+            background: -webkit-linear-gradient(#b820e6, #da7d20);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .introPara {
+            font-size: medium;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* .btn{
+            background-color: rgb(0, 95, 146);
+            color: white;
+            margin: 1rem 0;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 2rem;
+
+        }
+        .btn:hover{
+            background: transparent;
+            border: 1px solid yellow;
+            font-weight: bold;
+        } */
+        .btns {
+            display: flex;
+            gap: 30px;
+
+            .btn {
+                background: linear-gradient(45deg, #b820e6, #da7d20);
+                color: white;
+                margin: 1rem 0;
+                padding: 0.75rem 1.5rem;
+                border: none;
+                border-radius: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+
+            .btn:hover {
+                background: linear-gradient(45deg, #da7d20,#b820e6);
+                /* font-weight: bold; */
+            }
+        }
+    }
+
+    
+}
+
+@media only screen and (max-width: 700px) {
+    #intro{
+        .introContent{
+            font-size: 1.5rem;
+            h1{
+                font-size: 1.5rem;
+            }
+            .introPara{
+                font-size: small;
+                span{
+                    display: none;
+                }
+            }
+            .bg{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px){
+    #intro{
+        .introContent{
+            .btns{
+                gap: 10px;
+                .btn{
+                    padding: 0.75rem 0.75rem;
+                }
+            }
+        }
+    }
+}
