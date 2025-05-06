@@ -10,6 +10,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import './skills.css';
 import { SiMysql } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
+import {motion} from "framer-motion"
 
 
 const Experience = () => {
@@ -18,7 +19,14 @@ const Experience = () => {
             <h5>The Skills I Have</h5>
             <h2>Skills</h2>
             <div className="container experience__container">
-                <div className="experience__frontend">
+                <motion.div
+                initial={{opacity:0, scale:0.5}}
+        whileInView={{opacity:1, scale:1}}
+        transition={{
+         
+          duration:0.2
+        }}
+                className="experience__frontend">
                     <h3>Front-end Development</h3>
                     <div className="experience__content">
                         <article className="experience__details">
@@ -44,8 +52,15 @@ const Experience = () => {
                             <h4>Tailwind</h4>
                         </article>
                     </div>
-                </div>
-                <div className="experience__backend">
+                </motion.div>
+                <motion.div
+                initial={{opacity:0, scale:0.5}}
+        whileInView={{opacity:1, scale:1}}
+        transition={{
+          
+          duration:0.2
+        }}
+                className="experience__backend">
                     <h3>Back-end Development</h3>
                     <div className="experience__content">
                         <article className="experience__details">
@@ -69,8 +84,15 @@ const Experience = () => {
                             <h4>MySQL</h4>
                         </article>
                     </div>
-                </div>
-                <div className="experience__languages">
+                </motion.div>
+                <motion.div
+                initial={{opacity:0, scale:0.5}}
+        whileInView={{opacity:1, scale:1}}
+        transition={{
+          
+          duration:0.2
+        }}
+                className="experience__languages">
                     <h3>Others</h3>
                     <div className="experience__content">
                         <article className="experience__details">
@@ -87,7 +109,7 @@ const Experience = () => {
                         </article>
                         {/* <!-- Add more languages as needed --> */}
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
 

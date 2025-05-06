@@ -4,6 +4,7 @@ import IMG2 from '../../assets/youtube.png';
 import IMG3 from '../../assets/GoogleGeminiClone.png';
 import IMG4 from '../../assets/quizApp.png';
 import IMG5 from '../../assets/to-do.png';
+import {motion} from "framer-motion"
 // import IMG5 from '../../assets/news.png';
 // import IMG6 from '../../assets/math.png';
 
@@ -87,7 +88,14 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {soloProjects.map((pro) => (
-          <article className="portfolio__item" key={pro.id}>
+          <motion.article
+          initial={{opacity:0, scale:0.5}}
+      whileInView={{opacity:1, scale:1}}
+      transition={{
+       
+        duration:0.2
+      }}
+          className="portfolio__item" key={pro.id}>
             <div className="portfolio__item-image">
               <img src={pro.img} alt={pro.title} />
             </div>
@@ -113,7 +121,7 @@ const Portfolio = () => {
                 Visit Website
               </a>  
             </div>
-          </article>
+          </motion.article>
         ))}
       </div>
     </section>

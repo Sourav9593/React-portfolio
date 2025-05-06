@@ -4,6 +4,7 @@ import { Link } from 'react-scroll'
 import { GoArrowUpRight } from "react-icons/go";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FaRegMoon, FaRegSun } from "react-icons/fa";
+import {motion} from "framer-motion"
 
 
 const Navbar = () => {
@@ -52,7 +53,16 @@ const Navbar = () => {
 
     return (
         <div className={isDarkMode ? "dark-navSection" :"navSection"} >
-            <nav className="navbar">
+            <motion.nav
+            initial={{opacity:0, y:-50}}
+            whileInView={{opacity:1, y:0}}
+            transition={{
+                type:"spring",
+                stiffness: 100,
+                damping: 10,
+                duration:0.2
+            }}
+            className="navbar">
                 <div className="navbar-logo">
                     <h2>SOURAV.</h2>
                 </div>
@@ -93,7 +103,7 @@ const Navbar = () => {
                 <div className='nav-icon' onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}
                 </div>
-            </nav>
+            </motion.nav>
         </div>
     );
 };

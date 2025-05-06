@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import './contact.css'
 import emailjs from '@emailjs/browser';
+import {motion} from "framer-motion"
 
 const Contact = () => {
   const form = useRef();
@@ -23,7 +24,14 @@ const Contact = () => {
   };
 
   return (
-    <section className="contactPage">
+    <motion.section
+    initial={{opacity:0, scale:0.5}}
+      whileInView={{opacity:1, scale:1}}
+      transition={{
+       
+        duration:0.5
+      }}
+    className="contactPage">
         <div id='contact'>
             <h1>Contact Me</h1>
             <span>Please fill out the form below to discuss any work opportunities.</span>
@@ -34,7 +42,7 @@ const Contact = () => {
                 <button type='submit' value='send' className='submitBtn'>Submit</button>
             </form>
         </div>
-    </section>
+    </motion.section>
     
   )
 }
